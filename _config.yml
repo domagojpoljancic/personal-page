@@ -1,27 +1,6 @@
-# GitHub Pages compatible Jekyll configuration
 title: Personal Site
-description: Experiments, projects and writing.
-
-# Build settings
+description: Personal portfolio and notes
+baseurl: "/personal-page"
+url: "https://domagojpoljancic.github.io"
 markdown: kramdown
-permalink: /:title/
 
-# Theme (default GitHub Pages theme)
-theme: minima
-
-# Optional: uncomment to use GitHub Pages remote theme
-# remote_theme: jekyll/minima
-
-# Navigation: Home, Projects, Writing, About (order of links in header)
-header_pages:
-  - projects.md
-  - blog.md
-  - about.md
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - README.md

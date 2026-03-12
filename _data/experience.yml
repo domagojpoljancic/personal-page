@@ -1,23 +1,24 @@
 - title: Product Manager
-  company: Company Name
+  company: Example Company
   dates: "2022 — Present"
   bullets:
-    - Led development of digital products
-    - Worked across engineering and business teams
-    - Delivered measurable improvements
+    - Led the delivery of several digital products from discovery to launch.
+    - Worked closely with engineering and design teams to ship features.
+    - Measured outcomes and iterated based on user feedback.
 
-- title: Senior Associate
+- title: Associate Product Manager
   company: Another Company
   dates: "2019 — 2022"
   bullets:
-    - Shipped features from concept to launch
-    - Collaborated with design and engineering
-    - Drove user research and prioritization
+    - Prioritized backlogs and coordinated sprint planning with engineers.
+    - Helped define metrics and simple dashboards for product health.
+    - Collaborated with stakeholders across business and operations.
 
 - title: Analyst
-  company: Earlier Role Inc
+  company: Earlier Role Inc.
   dates: "2017 — 2019"
   bullets:
-    - Supported product and operations
-    - Built internal tools and reports
-    - Improved cross-team workflows
+    - Supported product and operations teams with analysis and tooling.
+    - Built lightweight internal tools to automate manual workflows.
+    - Created reports that informed roadmap and prioritization.
+
