@@ -1,0 +1,27 @@
+# GitHub Pages compatible Jekyll configuration
+title: Personal Site
+description: Experiments, projects and writing.
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+# Theme (default GitHub Pages theme)
+theme: minima
+
+# Optional: uncomment to use GitHub Pages remote theme
+# remote_theme: jekyll/minima
+
+# Navigation (links appear in header with minima)
+header_pages:
+  - about.md
+  - projects.md
+  - blog.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
