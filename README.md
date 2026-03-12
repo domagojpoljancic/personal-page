@@ -1,17 +1,16 @@
-# Personal Site
+# Personal Portfolio
 
-A minimal GitHub Pages site built with Jekyll (minima theme). CV/portfolio-style homepage with featured projects, latest writing, and optional blog. Designed for quick scanning (recruiters) and depth (developers).
+A one-page GitHub Pages site built with Jekyll. Dark-mode portfolio/CV with hero, experience timeline, notes (blog), and footer. No navigation bar; single scrolling page. Compatible with GitHub Pages (no frameworks or build tools).
 
 ## Structure
 
-- `index.md` — Homepage (hero, featured projects, latest writing, about preview, contact)
-- `about.md` — About page
-- `projects.md` — Projects list
-- `blog.md` — Writing (post list, reverse chronological)
-- `assets/` — `styles.css`, `profile.svg` (placeholder; replace with `profile.jpg` and update the image `src` in `index.md` for your photo)
-- `_posts/` — Blog posts (Markdown with YAML frontmatter)
+- `index.md` — Single page (layout: one-page): Hero, Experience, Notes, Footer
+- `_layouts/one-page.html` — Minimal layout (no header/nav)
+- `_data/experience.yml` — Timeline entries (title, company, dates, bullets)
+- `assets/styles.css` — Dark theme, hero two-column, timeline, chips, cards
+- `assets/profile.svg` — Placeholder profile image (replace with `profile.jpg` and update `src` in `index.md` for your photo)
+- `_posts/` — Blog posts (shown in Notes section; use frontmatter: title, date, excerpt)
 - `_config.yml` — Jekyll configuration
-- `_includes/` — `head.html` (adds custom CSS), `custom-head.html`, `latest-posts.html`
 
 ## Local development
 
@@ -24,4 +23,4 @@ Then open [http://localhost:4000](http://localhost:4000).
 
 ## GitHub Pages
 
-Push to the `main` branch. GitHub Pages will build the site automatically when the repository is set as a GitHub Pages source.
+Push to the `main` branch. GitHub Pages will build the site automatically.

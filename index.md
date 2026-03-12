@@ -1,53 +1,92 @@
 ---
-layout: default
+layout: one-page
 title: Home
 ---
 
-<div class="home">
+<div class="portfolio">
+  <!-- HERO -->
   <section class="hero">
-    <img class="profile-photo" src="{{ '/assets/profile.svg' | relative_url }}" alt="Profile photo" width="140" height="140">
-    <h1 class="hero-headline">Building useful software and experimenting with new ideas.</h1>
-    <p class="hero-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </section>
-
-  <section class="section">
-    <h2 class="section-title">Featured projects</h2>
-    <div class="project-card">
-      <h3>Project Alpha</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Short description of the project and its outcome.</p>
-      <a href="https://github.com/username/project-alpha">View project →</a>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-headline">Technical Product Manager with an engineering background.</h1>
+        <p class="hero-bio">Product-focused builder experimenting with software and new ideas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="chips">
+          <span class="chip">Technical Product</span>
+          <span class="chip">Engineering Degree</span>
+          <span class="chip">AI Experiments</span>
+          <span class="chip">Building in Public</span>
+        </div>
+        <div class="quick-links card">
+          <a href="mailto:your.email@example.com" class="quick-link"><span class="icon">{% include icon-email.html %}</span> Email</a>
+          <a href="https://linkedin.com/in/username" class="quick-link"><span class="icon">{% include icon-linkedin.html %}</span> LinkedIn</a>
+          <a href="https://github.com/username" class="quick-link"><span class="icon">{% include icon-github.html %}</span> GitHub</a>
+          <a href="https://instagram.com/username" class="quick-link"><span class="icon">{% include icon-instagram.html %}</span> Instagram</a>
+        </div>
+        <a href="/cv.pdf" class="btn btn-cv">Download CV</a>
+        <div class="status card">
+          <p class="status-label">Currently building</p>
+          <p class="status-value">Placeholder AI project</p>
+          <p class="status-label">Latest note</p>
+          <p class="status-value">{% assign latest = site.posts | first %}{% if latest %}<a href="{{ latest.url }}">{{ latest.title }}</a>{% else %}—{% endif %}</p>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="{{ '/assets/profile.svg' | relative_url }}" alt="Profile photo" width="320" height="320">
+      </div>
     </div>
-    <div class="project-card">
-      <h3>Project Beta</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Another placeholder project summary.</p>
-      <a href="https://github.com/username/project-beta">View project →</a>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        {% for job in site.data.experience %}
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">{{ job.title }}</h3>
+            <p class="timeline-company">{{ job.company }}</p>
+            <p class="timeline-dates">{{ job.dates }}</p>
+            <ul class="timeline-bullets">
+              {% for bullet in job.bullets %}
+              <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
-    <div class="project-card">
-      <h3>Project Gamma</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation. Third placeholder with a brief description.</p>
-      <a href="https://github.com/username/project-gamma">View project →</a>
+  </section>
+
+  <!-- NOTES -->
+  <section class="section notes">
+    <div class="container">
+      <h2 class="section-title">Notes</h2>
+      <p class="notes-intro">Short build logs about experiments and projects.</p>
+      <ul class="notes-list">
+        {% for post in site.posts limit: 3 %}
+        <li class="notes-item">
+          <span class="notes-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          <a href="{{ post.url }}" class="notes-title">{{ post.title }}</a>
+          <p class="notes-preview">{{ post.excerpt | default: post.content | strip_html | truncatewords: 20 }}</p>
+          <a href="{{ post.url }}" class="notes-link">Read more →</a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-    <p><a href="{{ '/projects.html' | relative_url }}">View all projects →</a></p>
   </section>
 
-  <section class="section">
-    <h2 class="section-title">Latest writing</h2>
-    {% include latest-posts.html %}
-    <p><a href="{{ '/blog.html' | relative_url }}">Read more on the Writing page →</a></p>
-  </section>
-
-  <section class="section about-preview">
-    <h2 class="section-title">About</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-    <p><a href="{{ '/about.html' | relative_url }}">More about me →</a></p>
-  </section>
-
-  <section class="section">
-    <h2 class="section-title">Contact</h2>
-    <ul class="contact-list">
-      <li><strong>GitHub:</strong> <a href="https://github.com/username">github.com/username</a></li>
-      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/username">linkedin.com/in/username</a></li>
-      <li><strong>Email:</strong> your.email@example.com</li>
-    </ul>
-  </section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://linkedin.com/in/username">LinkedIn</a>
+        <a href="https://github.com/username">GitHub</a>
+      </div>
+      <p class="footer-credit">Built with GitHub Pages.</p>
+    </div>
+  </footer>
 </div>

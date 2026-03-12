@@ -1,0 +1,23 @@
+- title: Product Manager
+  company: Company Name
+  dates: "2022 — Present"
+  bullets:
+    - Led development of digital products
+    - Worked across engineering and business teams
+    - Delivered measurable improvements
+
+- title: Senior Associate
+  company: Another Company
+  dates: "2019 — 2022"
+  bullets:
+    - Shipped features from concept to launch
+    - Collaborated with design and engineering
+    - Drove user research and prioritization
+
+- title: Analyst
+  company: Earlier Role Inc
+  dates: "2017 — 2019"
+  bullets:
+    - Supported product and operations
+    - Built internal tools and reports
+    - Improved cross-team workflows
