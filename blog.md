@@ -12,6 +12,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 ### Posts
 
+<ul class="post-list">
 {% for post in site.posts %}
-- **{{ post.date | date: "%Y-%m-%d" }}** — [{{ post.title }}]({{ post.url }})
+  <li>
+    <div class="post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+    <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+    <p class="post-excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 25 }}</p>
+    <a href="{{ post.url }}">Read more →</a>
+  </li>
 {% endfor %}
+</ul>

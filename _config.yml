@@ -12,11 +12,11 @@ theme: minima
 # Optional: uncomment to use GitHub Pages remote theme
 # remote_theme: jekyll/minima
 
-# Navigation (links appear in header with minima)
+# Navigation: Home, Projects, Writing, About (order of links in header)
 header_pages:
-  - about.md
   - projects.md
   - blog.md
+  - about.md
 
 # Exclude from processing
 exclude:

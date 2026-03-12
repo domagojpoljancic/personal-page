@@ -1,0 +1,10 @@
+<ul class="post-list">
+  {% for post in site.posts limit: 2 %}
+  <li>
+    <div class="post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+    <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+    <p class="post-excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 20 }}</p>
+    <a href="{{ post.url }}">Read more →</a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,254 @@
+/* Personal site – CV / builder blog style. Scannable, recruiter-friendly. */
+
+:root {
+  --max-width: 800px;
+  --spacing-unit: 1.5rem;
+  --spacing-section: 3rem;
+  --color-text: #1a1a1a;
+  --color-muted: #555;
+  --color-border: #e0e0e0;
+  --color-link: #0969da;
+  --color-bg-card: #f6f8fa;
+  --radius: 8px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Centered layout */
+.wrapper,
+.site-header .wrapper,
+main.page-content .wrapper {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-unit);
+  padding-right: var(--spacing-unit);
+}
+
+/* Typography */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin-bottom: var(--spacing-unit);
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Homepage ----- */
+
+.home .hero {
+  text-align: center;
+  padding: var(--spacing-section) 0;
+  margin-bottom: var(--spacing-section);
+}
+
+.home .profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto var(--spacing-unit);
+  border: 3px solid var(--color-border);
+}
+
+.home .hero-headline {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.home .hero-summary {
+  font-size: 1rem;
+  color: var(--color-muted);
+  max-width: 36em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .section {
+  margin-bottom: var(--spacing-section);
+}
+
+.home .section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-unit);
+}
+
+/* Project cards (homepage and projects page) */
+.project-card,
+.projects-page .project-block {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
+}
+
+.project-card h3,
+.projects-page .project-block h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.project-card p:last-child,
+.projects-page .project-block p:last-child {
+  margin-bottom: 0;
+}
+
+.project-card a[href*="github"],
+.project-card a[href*="http"],
+.projects-page .project-block a[href*="github"],
+.projects-page .project-block a[href*="http"] {
+  font-size: 0.9rem;
+}
+
+/* Writing / post list */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.post-list li {
+  margin-bottom: var(--spacing-unit);
+  padding-bottom: var(--spacing-unit);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post-list .post-date {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: 0.25rem;
+}
+
+.post-list .post-title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.post-list .post-excerpt {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  margin-bottom: 0;
+}
+
+/* About preview (homepage) */
+.home .about-preview {
+  padding: var(--spacing-unit) 0;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* ----- Projects page ----- */
+
+.projects-page .project-block {
+  margin-bottom: var(--spacing-unit);
+}
+
+.projects-page .project-block:last-child {
+  margin-bottom: 0;
+}
+
+/* ----- Blog / Writing page ----- */
+
+.blog-intro {
+  margin-bottom: var(--spacing-section);
+  color: var(--color-muted);
+}
+
+/* ----- Navigation ----- */
+
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-unit) 0;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.site-nav a:hover {
+  color: var(--color-link);
+}
+
+/* ----- Spacing and mobile ----- */
+
+main.page-content {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --spacing-section: 2rem;
+  }
+
+  .home .hero-headline {
+    font-size: 1.25rem;
+  }
+
+  .home .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
