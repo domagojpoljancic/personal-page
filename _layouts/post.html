@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+  </head>
+  <body class="site">
+    <main class="site-main">
+      <article class="post">
+        <div class="post-shell">
+          <a class="post-back-link" href="{{ '/' | relative_url }}#notes">← Back to notes</a>
+
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="post-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}">
+                {{ page.date | date: "%B %-d, %Y" }}
+              </time>
+            </p>
+            {% if page.excerpt %}
+              <p class="post-dek">{{ page.excerpt }}</p>
+            {% endif %}
+          </header>
+
+          <div class="post-content">
+            {{ content }}
+          </div>
+
+          <footer class="post-footer">
+            <a class="post-footer-link" href="{{ '/' | relative_url }}#notes">Back to notes</a>
+            <span class="post-footer-separator">·</span>
+            <a class="post-footer-link" href="{{ '/' | relative_url }}">Home</a>
+          </footer>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
+

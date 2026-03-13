@@ -15,15 +15,16 @@ title: Home
 
       <!-- 2. Name (left column, under portrait) -->
       <h1 class="profile-name">Placeholder Name</h1>
+      <p class="profile-location">📍 City, Country</p>
 
       <!-- 3. Intro / bio card (right column, top) -->
       <div class="intro-card">
-        <h2 class="hero-headline">Technical Product Manager with an engineering background.</h2>
-        <p class="hero-bio">
-          Product-focused builder experimenting with software and new ideas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <p class="intro-eyebrow">About</p>
+        <p class="intro-lede">
+          Product manager with an engineering background, focused on building simple tools and products that solve real problems.
         </p>
         <p class="hero-bio">
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Interested in thoughtful interfaces, calm product strategy, and learning by shipping small experiments.
         </p>
 
         <div class="chips">
@@ -34,7 +35,7 @@ title: Home
         </div>
       </div>
 
-      <!-- 4. Links card (left column, under name) -->
+      <!-- 4. Links card (left column, under name and location) -->
       <div class="links-card">
         <h2 class="links-title">Links</h2>
         <ul class="links-list">
@@ -45,12 +46,9 @@ title: Home
         </ul>
       </div>
 
-      <!-- 5. CV button (left, under links) -->
-      <a class="btn-primary cv-button" href="{{ '/cv.pdf' | relative_url }}">Download CV</a>
-
-      <!-- 6. Status card (right, under intro card) -->
+      <!-- 5. Status card (right, under intro card) -->
       <div class="status-card">
-        <p class="status-label">Currently building</p>
+        <p class="status-label">Current focus</p>
         <p class="status-value">Placeholder AI project</p>
 
         <p class="status-label">Latest note</p>
@@ -64,7 +62,7 @@ title: Home
         </p>
       </div>
 
-      <!-- 7. Experience (left column, under CV) -->
+      <!-- 6. Experience (left column, under links) -->
       <section class="section experience">
         <div class="section-inner">
           <h2 class="section-title">Experience</h2>
@@ -87,19 +85,30 @@ title: Home
         </div>
       </section>
 
-      <!-- 8. Education (left column, under Experience) -->
+      <!-- 7. CV button (left, under Experience) -->
+      <a class="btn-primary cv-button" href="{{ '/cv.pdf' | relative_url }}">Download CV</a>
+
+      <!-- 8. Education (left column, under CV) -->
       <section class="section education">
         <div class="section-inner">
           <h2 class="section-title">Education</h2>
-          <div class="education-body">
-            <p class="education-line"><strong>Placeholder Degree</strong> · University Name · 2013 — 2017</p>
-            <p class="education-text">Short placeholder description about studies and focus areas.</p>
+          <div class="timeline education-timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-role">Placeholder Degree</h3>
+                <p class="timeline-meta">University Name · 2013 — 2017</p>
+                <ul class="timeline-bullets">
+                  <li>Short placeholder description about studies and focus areas.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- 9. Notes (right column, under Status) -->
-      <section class="section notes">
+      <section class="section notes" id="notes">
         <div class="section-inner">
           <h2 class="section-title">Notes</h2>
           <p class="section-intro">
@@ -107,7 +116,7 @@ title: Home
           </p>
 
           <ul class="notes-list">
-            {% for post in site.posts limit:3 %}
+            {% for post in site.posts limit:10 %}
               <li class="notes-item">
                 <span class="notes-date">{{ post.date | date: "%Y-%m-%d" }}</span>
                 <a class="notes-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>

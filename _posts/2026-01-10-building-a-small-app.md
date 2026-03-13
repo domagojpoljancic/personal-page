@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Building a small app
 date: 2026-01-10 14:00:00 +0000
 excerpt: Placeholder entry about building a small application to explore a new idea.

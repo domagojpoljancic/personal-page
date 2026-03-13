@@ -1,4 +1,5 @@
 ---
+layout: post
 title: First note
 date: 2026-01-01 10:00:00 +0000
 excerpt: Short placeholder note about experimenting with a small product idea.
