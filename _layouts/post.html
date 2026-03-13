@@ -9,14 +9,14 @@
   <body class="site post-page" id="top">
     <main class="site-main">
       <article class="post">
-        <div class="post-shell">
-          <a class="post-back-link" href="{{ '/' | relative_url }}#notes">← Back to notes</a>
-
+        <div class="article">
           <header class="post-header">
             {% if page.cover %}
               <div class="post-cover-wrap">
                 <img src="{{ page.cover | relative_url }}" alt="">
               </div>
+            {% else %}
+              <div class="post-cover-placeholder" role="img" aria-label="Placeholder"></div>
             {% endif %}
             <h1 class="post-title">{{ page.title }}</h1>
             <p class="post-meta">
@@ -32,12 +32,6 @@
           <div class="post-content">
             {{ content }}
           </div>
-
-          <footer class="post-footer">
-            <a class="post-footer-link" href="{{ '/' | relative_url }}#notes">Back to notes</a>
-            <span class="post-footer-separator">·</span>
-            <a class="post-footer-link" href="{{ '/' | relative_url }}">Home</a>
-          </footer>
         </div>
       </article>
     </main>
@@ -52,4 +46,3 @@
     </footer>
   </body>
 </html>
-
