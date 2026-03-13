@@ -28,10 +28,10 @@
   box-sizing: border-box;
 }
 
-body {
+body.site {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -44,7 +44,6 @@ body {
 
 .page {
   width: 100%;
-  background: transparent;
 }
 
 /* Stable two-column grid */
@@ -77,7 +76,7 @@ body {
 /* Profile block: align first card row with main column */
 .profile-wrap {
   min-height: 260px;
-  margin-bottom: 0;
+  margin-bottom: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +85,7 @@ body {
 
 .avatar-wrap {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .avatar {
@@ -104,11 +103,12 @@ body {
 .name-block {
   width: 100%;
   text-align: center;
-  margin-top: 18px;
+  margin-top: 0;
 }
 
 .profile-name {
   margin: 0;
+  margin-top: 4px;
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -211,15 +211,27 @@ body {
   border: 1px solid var(--border-subtle);
 }
 
-.links-card h2,
-.links-card .section-kicker,
 .links-title {
-  text-align: center;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  margin: 0 0 12px 0;
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
+  letter-spacing: 0.09em;
   color: var(--text-muted);
+}
+
+.links-card svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: var(--text-muted);
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.links-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .links-list {
@@ -265,7 +277,7 @@ body {
 }
 
 .cv-button {
-  margin-top: 8px;
+  margin-top: 22px;
   align-self: center;
 }
 
@@ -281,6 +293,11 @@ body {
   background: var(--bg-elevated);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow-soft);
+}
+
+/* Align top edge of Current Focus with Links (intro is 260px, profile is 260px + 14px margin) */
+.focus-card {
+  margin-top: 14px;
 }
 
 .status-label {
@@ -317,10 +334,16 @@ body {
   margin-bottom: 22px;
 }
 
+.section.education {
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 32px;
+  padding-top: 32px;
+}
+
 .timeline {
   position: relative;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   padding-left: 1.75rem;
   border-left: 1px solid var(--border-subtle);
 }
@@ -415,32 +438,31 @@ body {
   padding-bottom: 0;
 }
 
-.notes-list .note-date {
+.note-date {
   font-size: 0.84rem;
   color: var(--text-muted);
   margin: 0 0 8px 0;
   letter-spacing: 0.01em;
 }
 
-.notes-list .note-title {
+.note-title {
   margin: 0 0 8px 0;
   font-size: 1.1rem;
   line-height: 1.35;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--text);
 }
 
-.notes-list .note-title a {
+.note-title a {
   color: var(--text);
   text-decoration: none;
 }
 
-.notes-list .note-title a:hover {
+.note-title a:hover {
   color: var(--accent);
 }
 
-.notes-list .note-excerpt {
+.note-excerpt {
   margin: 0 0 12px 0;
   color: var(--text-muted);
   line-height: 1.6;
@@ -448,7 +470,7 @@ body {
   font-size: 0.9rem;
 }
 
-.notes-list .note-read {
+.note-read {
   display: inline-block;
   margin-top: 2px;
   font-size: 0.9rem;
@@ -456,7 +478,7 @@ body {
   text-decoration: none;
 }
 
-.notes-list .note-read:hover {
+.note-read:hover {
   text-decoration: underline;
 }
 
@@ -533,7 +555,7 @@ a:hover {
 }
 
 /* ARTICLE / NOTE PAGE */
-body.post-page .site-main {
+body.site.post-page .site-main {
   padding-top: 1.5rem;
 }
 
@@ -709,7 +731,7 @@ body.post-page .site-main {
 }
 
 /* Article page floating footer */
-body.post-page {
+body.site.post-page {
   padding-bottom: 3.5rem;
 }
 
