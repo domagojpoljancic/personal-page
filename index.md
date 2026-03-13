@@ -20,10 +20,47 @@ title: Home
         <div class="links-card">
           <h2 class="links-title">Links</h2>
           <ul class="links-list">
-            <li><span class="links-label">Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></li>
-            <li><span class="links-label">LinkedIn</span><a href="https://linkedin.com/in/username">linkedin.com/in/username</a></li>
-            <li><span class="links-label">GitHub</span><a href="https://github.com/username">github.com/username</a></li>
-            <li><span class="links-label">Instagram</span><a href="https://instagram.com/username">instagram.com/username</a></li>
+            <li>
+              <div class="links-row">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <polyline points="4 6 12 12 20 6" fill="none" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span class="links-label">Email</span>
+              </div>
+              <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </li>
+            <li>
+              <div class="links-row">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M8 17V10h2.5V17H8Zm3.75 0V10H14v1.8h.03C14.3 10.9 15.1 10.5 16 10.5c1.9 0 2.5 1.1 2.5 3V17H16v-2.7c0-.8-.3-1.3-1-1.3-.9 0-1.3.6-1.3 1.7V17h-1.95Z" fill="currentColor" />
+                </svg>
+                <span class="links-label">LinkedIn</span>
+              </div>
+              <a href="https://linkedin.com/in/username">linkedin.com/in/username</a>
+            </li>
+            <li>
+              <div class="links-row">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <span class="links-label">GitHub</span>
+              </div>
+              <a href="https://github.com/username">github.com/username</a>
+            </li>
+            <li>
+              <div class="links-row">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="16" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <circle cx="16.5" cy="7.5" r="0.9" fill="currentColor" />
+                </svg>
+                <span class="links-label">Instagram</span>
+              </div>
+              <a href="https://instagram.com/username">instagram.com/username</a>
+            </li>
           </ul>
         </div>
 

@@ -241,6 +241,19 @@ body.site {
   font-size: 0.85rem;
 }
 
+.links-row {
+  display: flex;
+  align-items: center;
+}
+
+.links-card svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: var(--text-muted);
+  opacity: 0.9;
+}
+
 .links-label {
   color: var(--text-muted);
 }
