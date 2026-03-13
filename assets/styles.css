@@ -76,7 +76,7 @@ body.site {
 /* Profile block: align first card row with main column */
 .profile-wrap {
   min-height: 260px;
-  margin-bottom: 14px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,11 +210,14 @@ body.site {
   border: 1px solid var(--border-subtle);
 }
 
+.links-card h2,
+.links-card .section-kicker,
 .links-title {
-  margin: 0 0 0.5rem;
-  font-size: 0.8rem;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px 0;
   text-transform: uppercase;
-  letter-spacing: 0.09em;
   color: var(--text-muted);
 }
 
@@ -261,7 +264,7 @@ body.site {
 }
 
 .cv-button {
-  margin-top: 22px;
+  margin-top: 8px;
   align-self: center;
 }
 
@@ -277,11 +280,6 @@ body.site {
   background: var(--bg-elevated);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow-soft);
-}
-
-/* Align top edge of Current Focus with Links (intro is 260px, profile is 260px + 14px margin) */
-.focus-card {
-  margin-top: 14px;
 }
 
 .status-label {
@@ -321,7 +319,7 @@ body.site {
 .timeline {
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding-left: 1.75rem;
   border-left: 1px solid var(--border-subtle);
 }
