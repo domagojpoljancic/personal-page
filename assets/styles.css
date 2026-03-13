@@ -28,10 +28,10 @@
   box-sizing: border-box;
 }
 
-body.site {
+body {
   margin: 0;
   min-height: 100vh;
-  background-color: var(--bg);
+  background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -44,6 +44,7 @@ body.site {
 
 .page {
   width: 100%;
+  background: transparent;
 }
 
 /* Stable two-column grid */
@@ -414,31 +415,32 @@ body.site {
   padding-bottom: 0;
 }
 
-.note-date {
+.notes-list .note-date {
   font-size: 0.84rem;
   color: var(--text-muted);
   margin: 0 0 8px 0;
   letter-spacing: 0.01em;
 }
 
-.note-title {
+.notes-list .note-title {
   margin: 0 0 8px 0;
   font-size: 1.1rem;
   line-height: 1.35;
   font-weight: 600;
   letter-spacing: -0.02em;
+  color: var(--text);
 }
 
-.note-title a {
+.notes-list .note-title a {
   color: var(--text);
   text-decoration: none;
 }
 
-.note-title a:hover {
+.notes-list .note-title a:hover {
   color: var(--accent);
 }
 
-.note-excerpt {
+.notes-list .note-excerpt {
   margin: 0 0 12px 0;
   color: var(--text-muted);
   line-height: 1.6;
@@ -446,7 +448,7 @@ body.site {
   font-size: 0.9rem;
 }
 
-.note-read {
+.notes-list .note-read {
   display: inline-block;
   margin-top: 2px;
   font-size: 0.9rem;
@@ -454,7 +456,7 @@ body.site {
   text-decoration: none;
 }
 
-.note-read:hover {
+.notes-list .note-read:hover {
   text-decoration: underline;
 }
 
@@ -531,7 +533,7 @@ a:hover {
 }
 
 /* ARTICLE / NOTE PAGE */
-body.site.post-page .site-main {
+body.post-page .site-main {
   padding-top: 1.5rem;
 }
 
@@ -707,7 +709,7 @@ body.site.post-page .site-main {
 }
 
 /* Article page floating footer */
-body.site.post-page {
+body.post-page {
   padding-bottom: 3.5rem;
 }
 
