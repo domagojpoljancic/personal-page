@@ -198,8 +198,12 @@ body.site {
   font-size: 0.82rem;
 }
 
-.links-card {
+.links-card,
+.focus-card {
   margin-top: 0;
+}
+
+.links-card {
   padding: 1rem 1.15rem;
   border-radius: var(--radius-md);
   background: var(--bg-elevated);
@@ -273,6 +277,11 @@ body.site {
   background: var(--bg-elevated);
   border: 1px solid var(--border-strong);
   box-shadow: var(--shadow-soft);
+}
+
+/* Align top edge of Current Focus with Links (intro is 260px, profile is 260px + 14px margin) */
+.focus-card {
+  margin-top: 14px;
 }
 
 .status-label {
@@ -364,21 +373,7 @@ body.site {
 }
 
 .notes-list {
-  margin-top: 1rem;
-}
-
-.notes-list article {
-  margin-bottom: 24px;
-}
-
-.notes-list article:last-child {
-  margin-bottom: 0;
-}
-
-.note-date {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin: 0 0 6px;
+  margin-top: 1.35rem;
 }
 
 /* No cover on homepage – only on individual note pages */
@@ -390,6 +385,64 @@ body.site {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.notes-list article,
+.notes-list .note-item {
+  padding: 0 0 22px 0;
+  margin: 0 0 22px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.notes-list article:last-child,
+.notes-list .note-item:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.note-date {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin: 0 0 8px 0;
+  letter-spacing: 0.01em;
+}
+
+.note-title {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.note-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.note-title a:hover {
+  color: var(--accent);
+}
+
+.note-excerpt {
+  margin: 0 0 12px 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 62ch;
+  font-size: 0.9rem;
+}
+
+.note-read {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.note-read:hover {
+  text-decoration: underline;
 }
 
 .note-cover-link {
@@ -415,39 +468,6 @@ body.site {
   letter-spacing: 0.09em;
   color: var(--text-muted);
   margin: 0 0 0.35rem;
-}
-
-.note-title {
-  margin: 0 0 6px;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.note-title a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.note-title a:hover {
-  color: var(--accent);
-}
-
-.note-excerpt {
-  color: var(--text-muted);
-  margin: 0 0 10px;
-  line-height: 1.5;
-  font-size: 0.9rem;
-}
-
-.note-read {
-  font-size: 0.9rem;
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.note-read:hover {
-  text-decoration: underline;
 }
 
 /* FOOTER */

@@ -105,7 +105,7 @@ title: Home
           </div>
         </div>
 
-        <div class="status-card">
+        <div class="status-card focus-card">
           <p class="status-label">Current focus</p>
           <p class="status-value">Placeholder AI project</p>
           <p class="status-label">Latest note</p>
