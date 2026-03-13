@@ -125,7 +125,7 @@ title: Home
           <div class="notes-list">
             {% for post in site.posts limit:5 %}
               <article class="note-card">
-                <div class="note-meta">{{ post.date | date: "%Y-%m-%d" }}</div>
+                <p class="note-date">{{ post.date | date: "%Y-%m-%d" }}</p>
                 <h3 class="note-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
                 <p class="note-excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 20 }}</p>
                 <a class="note-read" href="{{ post.url | relative_url }}">Read more →</a>
