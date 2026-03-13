@@ -6,10 +6,7 @@
     <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
   </head>
-  <body class="site">
-    <main class="site-main">
-      {{ content }}
-    </main>
+  <body>
+    {{ content }}
   </body>
 </html>
-
