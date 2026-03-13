@@ -282,7 +282,7 @@ body.site {
 }
 
 .cv-button {
-  margin-top: 8px;
+  margin-top: 4px;
   align-self: center;
 }
 
@@ -337,6 +337,12 @@ body.site {
 .section.education .section-title {
   text-align: center;
   margin-bottom: 22px;
+}
+
+.section.education {
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 28px;
+  padding-top: 24px;
 }
 
 .timeline {
