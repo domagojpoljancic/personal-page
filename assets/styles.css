@@ -85,7 +85,7 @@ body.site {
 
 .avatar-wrap {
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .avatar {
@@ -103,12 +103,11 @@ body.site {
 .name-block {
   width: 100%;
   text-align: center;
-  margin-top: 0;
+  margin-top: 18px;
 }
 
 .profile-name {
   margin: 0;
-  margin-top: 4px;
   font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -219,19 +218,12 @@ body.site {
   color: var(--text-muted);
 }
 
-.links-card svg {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  color: var(--text-muted);
-  opacity: 0.9;
-  flex-shrink: 0;
-}
-
-.links-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.links-card h2,
+.links-card .section-kicker {
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
 }
 
 .links-list {
@@ -277,7 +269,7 @@ body.site {
 }
 
 .cv-button {
-  margin-top: 22px;
+  margin-top: 8px;
   align-self: center;
 }
 
@@ -334,16 +326,10 @@ body.site {
   margin-bottom: 22px;
 }
 
-.section.education {
-  border-top: 1px solid var(--border-subtle);
-  margin-top: 32px;
-  padding-top: 32px;
-}
-
 .timeline {
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding-left: 1.75rem;
   border-left: 1px solid var(--border-subtle);
 }
