@@ -312,7 +312,8 @@ body.site {
 
 /* EXPERIENCE TIMELINE */
 
-.section.experience .section-title {
+.section.experience .section-title,
+.section.education .section-title {
   text-align: center;
   margin-bottom: 22px;
 }
