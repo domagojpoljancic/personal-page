@@ -118,6 +118,11 @@ title: Home
           <ul class="notes-list">
             {% for post in site.posts limit:10 %}
               <li class="notes-item">
+                {% if post.cover %}
+                  <div class="notes-cover-wrap">
+                    <a href="{{ post.url | relative_url }}"><img class="notes-cover" src="{{ post.cover | relative_url }}" alt=""></a>
+                  </div>
+                {% endif %}
                 <span class="notes-date">{{ post.date | date: "%Y-%m-%d" }}</span>
                 <a class="notes-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
                 <p class="notes-excerpt">
