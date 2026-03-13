@@ -38,41 +38,53 @@ body.site {
 }
 
 .site-main {
-  display: flex;
-  justify-content: center;
-  padding: var(--section-spacing) var(--spacing);
+  display: block;
+  padding: 0;
 }
 
 .page {
   width: 100%;
 }
 
-/* Page grid: centered, sidebar + main */
+/* Stable two-column grid */
 .container {
-  max-width: 1100px;
+  max-width: 1120px;
   margin: 0 auto;
+  padding: 56px 24px 80px;
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 340px minmax(0, 1fr);
   gap: 64px;
-  padding: 0 var(--spacing);
 }
 
 .sidebar {
   position: sticky;
-  top: 80px;
+  top: 40px;
 }
 
-.sidebar > * + * {
-  margin-top: 24px;
+.sidebar-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.main > * + * {
-  margin-top: 32px;
+.main-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-/* Avatar: centered in sidebar */
+/* Profile block: align first card row with main column */
+.profile-wrap {
+  min-height: 260px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .avatar-wrap {
   width: 100%;
+  margin-bottom: 18px;
 }
 
 .avatar {
@@ -87,6 +99,11 @@ body.site {
   box-shadow: var(--shadow-soft);
 }
 
+.name-block {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
 .profile-name {
   margin: 0;
   font-size: 1.35rem;
@@ -96,8 +113,18 @@ body.site {
 
 .profile-location {
   margin: 0;
+  margin-top: 6px;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* Align first card in main with Links (same min-height as profile-wrap) */
+.intro-card {
+  min-height: 260px;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
 }
 
 /* Sections (inside sidebar/main: no large padding) */
@@ -119,12 +146,6 @@ body.site {
   color: var(--text-muted);
 }
 
-.intro-card {
-  padding: 1.25rem 1.5rem;
-  border-radius: var(--radius-lg);
-  background: var(--bg-elevated);
-  border: 1px solid var(--border-subtle);
-}
 
 .hero-headline {
   font-size: 1.1rem;
@@ -231,6 +252,11 @@ body.site {
   transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, background 0.12s ease-out;
 }
 
+.cv-button {
+  margin-top: 12px;
+  align-self: center;
+}
+
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 18px 40px var(--accent-soft);
@@ -276,6 +302,7 @@ body.site {
 .timeline {
   position: relative;
   margin-top: 0.75rem;
+  margin-bottom: 20px;
   padding-left: 1.75rem;
   border-left: 1px solid var(--border-subtle);
 }
@@ -360,13 +387,6 @@ body.site {
   display: block;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-}
-
-.note-cover-placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: var(--bg-soft);
-  border: 1px solid var(--border-subtle);
 }
 
 .note-meta {
@@ -457,24 +477,36 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ARTICLE PAGE */
+/* ARTICLE / NOTE PAGE */
 .post {
   width: 100%;
   padding-bottom: 4rem;
 }
 
-.article {
-  max-width: 720px;
+.post-layout {
+  max-width: 760px;
   margin: 0 auto;
   padding: 0 var(--spacing);
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--text);
+}
+
+.post-back-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.post-back-link:hover {
+  color: var(--accent);
 }
 
 .post-cover-wrap,
 .post-cover-placeholder {
-  margin: 0 0 1.5rem;
+  margin: 1.25rem 0 1.5rem;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--bg-soft);
@@ -521,11 +553,11 @@ a:hover {
 
 .post-content {
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .post-content p {
-  margin: 0 0 1.2rem;
+  margin: 0 0 1.25rem;
 }
 
 .post-content a {
@@ -629,7 +661,7 @@ body.site.post-page {
 }
 
 .article-footer-fixed-inner {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -655,15 +687,11 @@ body.site.post-page {
   .container {
     grid-template-columns: 1fr;
     gap: 32px;
+    padding: 32px 24px 48px;
   }
 
   .sidebar {
     position: static;
-  }
-
-  .sidebar > * + *,
-  .main > * + * {
-    margin-top: 24px;
   }
 
   .avatar {
@@ -680,7 +708,7 @@ body.site.post-page {
     margin-top: 48px;
   }
 
-  .article {
+  .post-layout {
     font-size: 17px;
   }
 
