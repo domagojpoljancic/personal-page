@@ -312,9 +312,14 @@ body.site {
 
 /* EXPERIENCE TIMELINE */
 
+.section.experience .section-title {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
 .timeline {
   position: relative;
-  margin-top: 0.75rem;
+  margin-top: 0;
   margin-bottom: 20px;
   padding-left: 1.75rem;
   border-left: 1px solid var(--border-subtle);
@@ -368,12 +373,21 @@ body.site {
 }
 
 /* NOTES – 5 note cards */
-.notes .section-title {
-  margin: 0 0 0.5rem;
+.notes-header h2 {
+  font-size: 1.9rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 10px 0;
+}
+
+.notes-header {
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .notes-list {
-  margin-top: 1.35rem;
+  margin-top: 0;
 }
 
 /* No cover on homepage – only on individual note pages */

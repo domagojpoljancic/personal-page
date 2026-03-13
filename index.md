@@ -120,8 +120,10 @@ title: Home
         </div>
 
         <section class="section notes" id="notes">
-          <h2 class="section-title">Notes</h2>
-          <p class="section-intro">Short build logs about experiments and products in progress.</p>
+          <div class="notes-header">
+            <h2 class="section-title">Notes</h2>
+            <p class="section-intro">Short build logs about experiments and products in progress.</p>
+          </div>
           <div class="notes-list">
             {% for post in site.posts limit:5 %}
               <article class="note-card">
