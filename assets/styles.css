@@ -212,7 +212,6 @@ body.site {
 }
 
 .links-card {
-  min-height: 220px;
   padding: 1rem 1.15rem;
   border-radius: var(--radius-md);
   background: var(--bg-elevated);
@@ -302,7 +301,6 @@ body.site {
 }
 
 .status-card {
-  min-height: 220px;
   padding: 1rem 1.25rem;
   border-radius: var(--radius-md);
   background: var(--bg-elevated);
