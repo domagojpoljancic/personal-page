@@ -308,9 +308,9 @@ body.site {
   box-shadow: var(--shadow-soft);
 }
 
-/* Align top edge of Current Focus with Links (intro is 260px, profile is 260px + 14px margin) */
+/* Align top edge of Current Focus with Links; extra space below About */
 .focus-card {
-  margin-top: 14px;
+  margin-top: 44px;
 }
 
 .status-label {
