@@ -1,24 +1,30 @@
-- title: Product Manager
-  company: Example Company
-  dates: "2022 — Present"
+- title: Technical Product Manager
+  company: Zeal Network SE (Lotto24)
+  dates: "2023 — Present"
   bullets:
-    - Led the delivery of several digital products from discovery to launch.
-    - Worked closely with engineering and design teams to ship features.
-    - Measured outcomes and iterated based on user feedback.
+    - Backend services and APIs for player account management; focus on KYC and account lifecycle.
+    - Own architectural direction for scalable APIs and integrations used by internal B2B teams.
+    - Led functional documentation for Core services; driving Responsible Gambling enablement with AI/ML tooling.
 
-- title: Associate Product Manager
-  company: Another Company
-  dates: "2019 — 2022"
+- title: Technical Product Manager
+  company: ABOUT YOU SE & Co. KG (SCAYLE)
+  dates: "2021 — 2023"
   bullets:
-    - Prioritized backlogs and coordinated sprint planning with engineers.
-    - Helped define metrics and simple dashboards for product health.
-    - Collaborated with stakeholders across business and operations.
+    - Led backend developer teams on Middleware product for tenant connectivity and integrations.
+    - Shipped integration projects for FC Bayern, s.Oliver, Tom Tailor, Deichmann, Fielmann.
+    - Introduced unified monitoring and logging (Datadog), improving visibility and time-to-intervention.
 
-- title: Analyst
-  company: Earlier Role Inc.
+- title: Business Analyst
+  company: Integrated Business Systems IPS – Remaris
+  dates: "2019 — 2021"
+  bullets:
+    - POS software portfolio: self-ordering kiosks, mobile ordering, third-party integrations.
+    - Product lead on mobile apps (Leggiero, Burger King Croatia, Batak loyalty); QA and UAT.
+    - Drove technical delivery that expanded the company into Slovenia, Bosnia, and Montenegro.
+
+- title: System Engineer
+  company: Croatian Telecom (Deutsche Telekom Group)
   dates: "2017 — 2019"
   bullets:
-    - Supported product and operations teams with analysis and tooling.
-    - Built lightweight internal tools to automate manual workflows.
-    - Created reports that informed roadmap and prioritization.
-
+    - Scripts and workflows for ERP/billing efficiency; analysis and improvements of big-data and BI solutions.
+    - Optimized monthly invoice processing for fixed-line and mobile; application and system management.

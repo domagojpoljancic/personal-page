@@ -9,11 +9,11 @@ title: Home
       <div class="sidebar-stack">
         <div class="profile-wrap">
           <div class="avatar-wrap">
-            <img class="avatar" src="{{ '/assets/profile.svg' | relative_url }}" alt="Profile" width="220" height="220">
+            <img class="avatar" src="{{ '/assets/profile.png' | relative_url }}" alt="Domagoj Poljančić" width="220" height="220">
           </div>
           <div class="name-block">
-            <h1 class="profile-name">Placeholder Name</h1>
-            <p class="profile-location">📍 City, Country</p>
+            <h1 class="profile-name">Domagoj Poljančić</h1>
+            <p class="profile-location">📍 Hamburg, Germany</p>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ title: Home
                 </svg>
                 <span class="links-label">Email</span>
               </div>
-              <a href="mailto:your.email@example.com">your.email@example.com</a>
+              <a href="mailto:domagoj.poljancic@gmail.com">domagoj.poljancic@gmail.com</a>
             </li>
             <li>
               <div class="links-row">
@@ -38,7 +38,7 @@ title: Home
                 </svg>
                 <span class="links-label">LinkedIn</span>
               </div>
-              <a href="https://linkedin.com/in/username">linkedin.com/in/username</a>
+              <a href="https://linkedin.com/in/dpoljancic">linkedin.com/in/dpoljancic</a>
             </li>
             <li>
               <div class="links-row">
@@ -48,7 +48,7 @@ title: Home
                 </svg>
                 <span class="links-label">GitHub</span>
               </div>
-              <a href="https://github.com/username">github.com/username</a>
+              <a href="https://github.com/dpoljancic">github.com/dpoljancic</a>
             </li>
             <li>
               <div class="links-row">
@@ -84,7 +84,7 @@ title: Home
           </div>
         </section>
 
-        <a class="btn-primary cv-button" href="{{ '/cv.pdf' | relative_url }}">Download CV</a>
+        <a class="btn-primary cv-button" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
 
         <section class="section education">
           <h2 class="section-title">Education</h2>
@@ -92,30 +92,20 @@ title: Home
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                <h3 class="timeline-role">Placeholder Degree</h3>
-                <p class="timeline-meta">University Name · 2013 — 2017</p>
+                <h3 class="timeline-role">Master of Computer Engineering</h3>
+                <p class="timeline-meta">Faculty of Engineering, Rijeka · 2017</p>
                 <ul class="timeline-bullets">
-                  <li>Short placeholder description about studies and focus areas.</li>
+                  <li>Graduated Cum Laude (Top 20%). Member of Autonomous Perception and Artificial Systems Laboratory. Thesis on photogrammetry; publication on OpenStack-based cloud.</li>
                 </ul>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                <h3 class="timeline-role">Another Degree</h3>
-                <p class="timeline-meta">Another University · 2010 — 2013</p>
+                <h3 class="timeline-role">Bachelor of Computer Engineering</h3>
+                <p class="timeline-meta">Faculty of Engineering, Rijeka · 2015</p>
                 <ul class="timeline-bullets">
-                  <li>Placeholder description for second entry.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <h3 class="timeline-role">Certificate</h3>
-                <p class="timeline-meta">Institution · 2008 — 2010</p>
-                <ul class="timeline-bullets">
-                  <li>Short placeholder for third education entry.</li>
+                  <li>Co-founder of RITEH UAV Team. Thesis on UAV interaction via smartwatch/smartphone; publication on UAV safety and regulations.</li>
                 </ul>
               </div>
             </div>
@@ -129,22 +119,22 @@ title: Home
         <div class="intro-card">
           <p class="intro-eyebrow">About</p>
           <p class="intro-lede">
-            Product manager with an engineering background, focused on building simple tools and products that solve real problems.
+            Technical product manager with 9+ years across system engineering, business analysis, and product. I bridge business and IT by turning priorities into clear backend architecture and scalable APIs.
           </p>
           <p class="hero-bio">
-            Interested in thoughtful interfaces, calm product strategy, and learning by shipping small experiments.
+            Focused on backend-heavy products, KYC and account lifecycle, and practical AI—from LLMs and RAG to observability and delivery. Strong in Agile, SQL, AWS, and making complex systems easier to run and integrate.
           </p>
           <div class="chips">
             <span class="chip">Technical Product</span>
-            <span class="chip">Engineering Degree</span>
-            <span class="chip">AI Experiments</span>
-            <span class="chip">Building in Public</span>
+            <span class="chip">Backend & APIs</span>
+            <span class="chip">AI & Data</span>
+            <span class="chip">Observability</span>
           </div>
         </div>
 
         <div class="status-card focus-card">
           <p class="status-label">Current focus</p>
-          <p class="status-value">Placeholder AI project</p>
+          <p class="status-value">Backend product, KYC & account lifecycle, and AI-enabled tooling.</p>
           <p class="status-label">Latest note</p>
           {% assign latest = site.posts | first %}
           <p class="status-value">
@@ -179,9 +169,9 @@ title: Home
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-links">
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="https://linkedin.com/in/username">LinkedIn</a>
-        <a href="https://github.com/username">GitHub</a>
+        <a href="mailto:domagoj.poljancic@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/dpoljancic">LinkedIn</a>
+        <a href="https://github.com/dpoljancic">GitHub</a>
       </div>
       <p class="footer-note">Built with GitHub Pages.</p>
     </div>
