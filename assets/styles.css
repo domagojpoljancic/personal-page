@@ -301,6 +301,7 @@ body.site {
 }
 
 .status-card {
+  max-width: var(--sidebar-width);
   padding: 1rem 1.25rem;
   border-radius: var(--radius-md);
   background: var(--bg-elevated);
