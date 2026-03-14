@@ -136,15 +136,6 @@ title: Home
         <div class="status-card focus-card">
           <p class="status-label">Current focus</p>
           <p class="status-value">Exploring AI-assisted product workflows and small experimental tools. Backend product (KYC, account lifecycle). Side project: Vibe Coding iOS app with LangGraph and RAG.</p>
-          <p class="status-label">Latest note</p>
-          {% assign latest = site.posts | first %}
-          <p class="status-value">
-            {% if latest %}
-              <a href="{{ latest.url | relative_url }}">{{ latest.title }}</a>
-            {% else %}
-              —
-            {% endif %}
-          </p>
         </div>
 
         <!-- Future portfolio / case study ideas (from CV): Responsible Gambling AI system architecture; Datadog observability rollout across tenant integrations; Backend API platform for Player Account Management; POS kiosk and ordering platform expansion; UAV research project. -->
