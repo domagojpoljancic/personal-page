@@ -119,22 +119,22 @@ title: Home
         <div class="intro-card">
           <p class="intro-eyebrow">About</p>
           <p class="intro-lede">
-            Technical product manager with 9+ years across system engineering, business analysis, and product. I bridge business and IT by turning priorities into clear backend architecture and scalable APIs.
+            Technical, product-centric leader with 9+ years across system engineering, business analysis, and technical product management. I specialize in bringing AI-powered products to life and turning complex ideas into clear, scalable solutions that deliver real value.
           </p>
           <p class="hero-bio">
-            Focused on backend-heavy products, KYC and account lifecycle, and practical AI—from LLMs and RAG to observability and delivery. Strong in Agile, SQL, AWS, and making complex systems easier to run and integrate.
+            I bridge business and IT through backend architecture, APIs, and data-driven decisions. I thrive on collaborative, cross-functional delivery—from KYC and account lifecycle to LLMs, RAG, and observability—and on making hard problems simpler to run and integrate.
           </p>
           <div class="chips">
-            <span class="chip">Technical Product</span>
+            <span class="chip">Product Strategy</span>
             <span class="chip">Backend & APIs</span>
-            <span class="chip">AI & Data</span>
-            <span class="chip">Observability</span>
+            <span class="chip">AI & RAG</span>
+            <span class="chip">SaaS & E‑commerce</span>
           </div>
         </div>
 
         <div class="status-card focus-card">
           <p class="status-label">Current focus</p>
-          <p class="status-value">Backend product, KYC & account lifecycle, and AI-enabled tooling.</p>
+          <p class="status-value">Backend product—KYC, account lifecycle, and AI-enabled tooling. Side project: Vibe Coding iOS app with LangGraph as the AI agents backend; next steps to add RAG.</p>
           <p class="status-label">Latest note</p>
           {% assign latest = site.posts | first %}
           <p class="status-value">
