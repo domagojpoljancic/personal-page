@@ -2,7 +2,7 @@
 layout: post
 title: First note
 date: 2026-01-01 10:00:00 +0000
-excerpt: Short placeholder note about experimenting with a small product idea.
+excerpt: Early thoughts on shipping small experiments and what makes backend product work in practice.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

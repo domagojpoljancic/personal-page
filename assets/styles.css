@@ -113,6 +113,14 @@ body.site {
   letter-spacing: -0.03em;
 }
 
+.profile-tagline {
+  margin: 0;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
 .profile-location,
 .location {
   margin: 0;

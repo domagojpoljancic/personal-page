@@ -2,7 +2,7 @@
 layout: post
 title: Building a small app
 date: 2026-01-10 14:00:00 +0000
-excerpt: Placeholder entry about building a small application to explore a new idea.
+excerpt: Experimenting with small AI-powered internal tools to better understand real product workflows.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

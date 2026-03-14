@@ -13,6 +13,7 @@ title: Home
           </div>
           <div class="name-block">
             <h1 class="profile-name">Domagoj Poljančić</h1>
+            <p class="profile-tagline">Technical Product Manager focused on backend platforms, APIs and AI-enabled products.</p>
             <p class="profile-location">📍 Hamburg, Germany</p>
           </div>
         </div>
@@ -48,7 +49,7 @@ title: Home
                 </svg>
                 <span class="links-label">GitHub</span>
               </div>
-              <a href="https://github.com/dpoljancic">github.com/dpoljancic</a>
+              <a href="https://github.com/domagojpoljancic">github.com/domagojpoljancic</a>
             </li>
             <li>
               <div class="links-row">
@@ -59,7 +60,7 @@ title: Home
                 </svg>
                 <span class="links-label">Instagram</span>
               </div>
-              <a href="https://instagram.com/username">instagram.com/username</a>
+              <a href="https://www.instagram.com/domagoj.93/">instagram.com/domagoj.93</a>
             </li>
           </ul>
         </div>
@@ -119,10 +120,10 @@ title: Home
         <div class="intro-card">
           <p class="intro-eyebrow">About</p>
           <p class="intro-lede">
-            Technical, product-centric leader with 9+ years across system engineering, business analysis, and technical product management. I specialize in bringing AI-powered products to life and turning complex ideas into clear, scalable solutions that deliver real value.
+            Technical, product-centric leader with 9+ years in system engineering, business analysis, and technical product management. I focus on backend platforms, APIs, and integrations—turning business priorities into clear architecture and scalable services that engineering teams can build and run.
           </p>
           <p class="hero-bio">
-            I bridge business and IT through backend architecture, APIs, and data-driven decisions. I thrive on collaborative, cross-functional delivery—from KYC and account lifecycle to LLMs, RAG, and observability—and on making hard problems simpler to run and integrate.
+            I sit between engineering and product: requirements, discovery, and direction for backend-heavy systems. I’ve shipped platform products for player accounts and KYC, tenant integrations and observability, POS and mobile apps, and I’m deepening my practice in AI and LLM-enabled tooling.
           </p>
           <div class="chips">
             <span class="chip">Product Strategy</span>
@@ -134,7 +135,7 @@ title: Home
 
         <div class="status-card focus-card">
           <p class="status-label">Current focus</p>
-          <p class="status-value">Backend product—KYC, account lifecycle, and AI-enabled tooling. Side project: Vibe Coding iOS app with LangGraph as the AI agents backend; next steps to add RAG.</p>
+          <p class="status-value">Exploring AI-assisted product workflows and small experimental tools. Backend product (KYC, account lifecycle). Side project: Vibe Coding iOS app with LangGraph and RAG.</p>
           <p class="status-label">Latest note</p>
           {% assign latest = site.posts | first %}
           <p class="status-value">
@@ -146,10 +147,11 @@ title: Home
           </p>
         </div>
 
+        <!-- Future portfolio / case study ideas (from CV): Responsible Gambling AI system architecture; Datadog observability rollout across tenant integrations; Backend API platform for Player Account Management; POS kiosk and ordering platform expansion; UAV research project. -->
         <section class="section notes" id="notes">
           <div class="notes-header">
             <h2 class="section-title">Notes</h2>
-            <p class="section-intro">Short build logs about experiments and products in progress.</p>
+            <p class="section-intro">Technical and product reflections—experiments, tools, and what I’m learning along the way.</p>
           </div>
           <div class="notes-list">
             {% for post in site.posts limit:5 %}
@@ -171,7 +173,8 @@ title: Home
       <div class="footer-links">
         <a href="mailto:domagoj.poljancic@gmail.com">Email</a>
         <a href="https://linkedin.com/in/dpoljancic">LinkedIn</a>
-        <a href="https://github.com/dpoljancic">GitHub</a>
+        <a href="https://github.com/domagojpoljancic">GitHub</a>
+        <a href="https://www.instagram.com/domagoj.93/">Instagram</a>
       </div>
       <p class="footer-note">Built with GitHub Pages.</p>
     </div>

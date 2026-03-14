@@ -2,29 +2,30 @@
   company: Zeal Network SE (Lotto24)
   dates: "2023 — Present"
   bullets:
-    - Backend services and APIs for player account management; focus on KYC and account lifecycle.
-    - Own architectural direction for scalable APIs and integrations used by internal B2B teams.
-    - Led functional documentation for Core services; driving Responsible Gambling enablement with AI/ML tooling.
+    - Own architectural direction for backend APIs and integration flows; reduced integration friction for internal B2B teams.
+    - Drove KYC and player-account lifecycle design with focus on secure data handling and scalable services.
+    - Standardized documentation for core backend services; leading Responsible Gambling enablement with AI/ML tooling.
 
 - title: Technical Product Manager
   company: ABOUT YOU SE & Co. KG (SCAYLE)
   dates: "2021 — 2023"
   bullets:
-    - Led backend developer teams on Middleware product for tenant connectivity and integrations.
-    - Shipped integration projects for FC Bayern, s.Oliver, Tom Tailor, Deichmann, Fielmann.
-    - Introduced unified monitoring and logging (Datadog), improving visibility and time-to-intervention.
+    - Led backend teams on Middleware product for tenant connectivity; shipped integrations for FC Bayern, Deichmann, Fielmann, others.
+    - Translated business priorities into backend architecture and observability; introduced Datadog for unified monitoring and logging.
+    - Improved time-to-intervention through better visibility across tenant solutions.
 
 - title: Business Analyst
   company: Integrated Business Systems IPS – Remaris
   dates: "2019 — 2021"
   bullets:
-    - "POS software portfolio: self-ordering kiosks, mobile ordering, third-party integrations."
-    - Product lead on mobile apps (Leggiero, Burger King Croatia, Batak loyalty); QA and UAT.
-    - Drove technical delivery that expanded the company into Slovenia, Bosnia, and Montenegro.
+    - Delivered POS portfolio (self-ordering kiosks, mobile ordering, integrations); product lead on mobile apps (Leggiero, Burger King Croatia, Batak).
+    - Expanded company into three new markets (Slovenia, Bosnia, Montenegro) via technical delivery and requirements.
+    - QA, UAT, and integration testing for first customizable self-service kiosk in southeast Europe.
 
 - title: System Engineer
   company: Croatian Telecom (Deutsche Telekom Group)
   dates: "2017 — 2019"
   bullets:
-    - Scripts and workflows for ERP/billing efficiency; analysis and improvements of big-data and BI solutions.
-    - Optimized monthly invoice processing for fixed-line and mobile; application and system management.
+    - Automated ERP and billing workflows; improved big-data and BI analysis with Oracle PL/SQL.
+    - Optimized monthly invoice processing for fixed-line and mobile; reduced manual intervention.
+    - Deployed and maintained company applications and system management tools.
