@@ -136,7 +136,7 @@ title: Home
         <div class="status-card focus-card">
           <p class="status-label">Current focus</p>
           <p class="status-value">At work I focus on an internal B2B platform: backend services and APIs that other business units use to integrate. I own product and architecture for player account management, KYC, and lifecycle flows—so internal teams can ship faster with less friction.</p>
-          <p class="status-value">On the side I'm building the Vibe Coding iOS app with LangGraph and RAG, and deepening my understanding of AI architecture and technical foundations—LLMs, agents, and how to make them reliable in product.</p>
+          <p class="status-value">On the side I'm building the Vibe Coding iOS app (LangGraph, RAG) and learning AI architecture and foundations—LLMs, agents, reliability.</p>
         </div>
 
         <!-- Future portfolio / case study ideas (from CV): Responsible Gambling AI system architecture; Datadog observability rollout across tenant integrations; Backend API platform for Player Account Management; POS kiosk and ordering platform expansion; UAV research project. -->
