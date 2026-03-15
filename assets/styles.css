@@ -115,11 +115,10 @@ body.site {
 
 .profile-tagline {
   margin: 0;
-  margin-top: 8px;
-  font-size: 0.9rem;
+  margin-top: 6px;
+  font-size: 0.85rem;
   color: var(--text-muted);
   font-weight: 500;
-  letter-spacing: 0.01em;
 }
 
 .profile-location,
@@ -167,9 +166,8 @@ body.site {
 }
 
 .hero-bio {
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
   font-size: 0.98rem;
-  line-height: 1.55;
   color: var(--text-muted);
   max-width: 40rem;
 }
@@ -183,10 +181,9 @@ body.site {
 }
 
 .intro-lede {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5;
   color: var(--text);
   max-width: 40rem;
 }
@@ -329,10 +326,6 @@ body.site {
   font-size: 0.95rem;
 }
 
-.status-value.status-line {
-  margin-bottom: 0.4rem;
-}
-
 .status-value:last-child {
   margin-bottom: 0;
 }
@@ -370,7 +363,7 @@ body.site {
 
 .timeline-item {
   position: relative;
-  padding-bottom: 2.75rem;
+  padding-bottom: 2.25rem;
 }
 
 .timeline-item:last-child {
@@ -408,12 +401,11 @@ body.site {
   margin: 0;
   padding-left: 1.1rem;
   font-size: 0.92rem;
-  line-height: 1.55;
   color: var(--text-muted);
 }
 
 .timeline-bullets li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
 }
 
 /* NOTES – 5 note cards */
@@ -462,13 +454,13 @@ body.site {
 .note-date {
   font-size: 0.84rem;
   color: var(--text-muted);
-  margin: 0 0 10px 0;
+  margin: 0 0 8px 0;
   letter-spacing: 0.01em;
 }
 
 .note-title {
-  margin: 0 0 10px 0;
-  font-size: 1.15rem;
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
   line-height: 1.35;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -484,7 +476,7 @@ body.site {
 }
 
 .note-excerpt {
-  margin: 0 0 14px 0;
+  margin: 0 0 12px 0;
   color: var(--text-muted);
   line-height: 1.6;
   max-width: 62ch;
@@ -493,7 +485,7 @@ body.site {
 
 .note-read {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 2px;
   font-size: 0.9rem;
   color: var(--accent);
   text-decoration: none;
