@@ -123,7 +123,7 @@ title: Home
             Technical, product-centric leader with 9+ years in system engineering, business analysis, and technical product management. I focus on backend platforms, APIs, and integrations—turning business priorities into clear architecture and scalable services that engineering teams can build and run.
           </p>
           <p class="hero-bio">
-            I sit between engineering and product: requirements, discovery, and direction for backend-heavy systems. I’ve shipped platform products for player accounts and KYC, tenant integrations and observability, POS and mobile apps, and I’m deepening my practice in AI and LLM-enabled tooling.
+            I sit between engineering and product: requirements, discovery, and direction for backend-heavy systems. I’ve shipped platform products for player accounts and KYC, tenant integrations and observability, POS and mobile apps, and I’m deepening my practice in AI and LLM-enabled tooling. I work in Agile contexts and care about clear documentation and observability so teams can move fast without losing clarity.
           </p>
           <div class="chips">
             <span class="chip">Product Strategy</span>
@@ -135,7 +135,8 @@ title: Home
 
         <div class="status-card focus-card">
           <p class="status-label">Current focus</p>
-          <p class="status-value">Exploring AI-assisted product workflows and small experimental tools. Backend product (KYC, account lifecycle). Side project: Vibe Coding iOS app with LangGraph and RAG.</p>
+          <p class="status-value">At work I focus on an internal B2B platform: backend services and APIs that other business units use to integrate. I own product and architecture for player account management, KYC, and lifecycle flows—so internal teams can ship faster with less friction.</p>
+          <p class="status-value">On the side I'm building the Vibe Coding iOS app with LangGraph and RAG, and deepening my understanding of AI architecture and technical foundations—LLMs, agents, and how to make them reliable in product.</p>
         </div>
 
         <!-- Future portfolio / case study ideas (from CV): Responsible Gambling AI system architecture; Datadog observability rollout across tenant integrations; Backend API platform for Player Account Management; POS kiosk and ordering platform expansion; UAV research project. -->
