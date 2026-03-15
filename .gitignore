@@ -1,0 +1,6 @@
+_site/
+node_modules/
+.playwright/
+test-results/
+playwright-report/
+*.log

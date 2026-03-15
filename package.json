@@ -1,0 +1,14 @@
+{
+  "name": "personal-page",
+  "private": true,
+  "description": "CI: visual regression and local serve",
+  "scripts": {
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots",
+    "serve": "serve _site -p 4000"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "serve": "^14.2.4"
+  }
+}

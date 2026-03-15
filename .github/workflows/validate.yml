@@ -1,0 +1,42 @@
+# Validate site (build, HTML, links) on pull requests
+name: Validate
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '_config.yml'
+      - '_layouts/**'
+      - '_data/**'
+      - '_posts/**'
+      - 'assets/**'
+      - 'index.md'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Validate HTML and links
+        run: |
+          bundle exec htmlproofer _site \
+            --assume-extension \
+            --url-ignore "/localhost/,/github.com/" \
+            --only-4xx \
+            --empty-alt-ignore \
+            --allow-missing-href
+        continue-on-error: false
