@@ -1,6 +1,7 @@
 # Gemfile for GitHub Pages / Jekyll
 source "https://rubygems.org"
 gem "jekyll", "~> 3.9"
+gem "kramdown-parser-gfm"
 gem "minima", "~> 2.5"
 
 # CI: validate HTML and links
