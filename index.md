@@ -65,10 +65,11 @@ title: Home
           </ul>
         </div>
 
-        <section class="section experience">
+        {% assign exp_roles = site.data.experience %}
+        <section class="section experience{% if exp_roles.size == 1 %} experience-single-role{% endif %}" id="experience-section">
           <h2 class="section-title">Experience</h2>
           <div class="timeline">
-            {% for role in site.data.experience %}
+            {% for role in exp_roles limit:1 %}
               <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -82,14 +83,45 @@ title: Home
                 </div>
               </div>
             {% endfor %}
+            {% if exp_roles.size > 1 %}
+            <div class="experience-mobile-top">
+              <button type="button" class="sidebar-expand-btn sidebar-expand-experience-top" id="experience-expand-btn-top" aria-expanded="false" aria-controls="experience-more-panel">Show more experience</button>
+              <a class="btn-primary cv-button cv-button-mobile-collapsed" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+            </div>
+            <div id="experience-more-panel" class="experience-more-panel">
+              {% for role in exp_roles offset:1 %}
+                <div class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-role">{{ role.title }}</h3>
+                    <p class="timeline-meta">{{ role.company }} · {{ role.dates }}</p>
+                    <ul class="timeline-bullets">
+                      {% for bullet in role.bullets %}
+                        <li>{{ bullet }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="experience-mobile-bottom">
+              <button type="button" class="sidebar-expand-btn sidebar-expand-experience-bottom" id="experience-collapse-btn-bottom" aria-expanded="true" aria-controls="experience-more-panel">Hide experience</button>
+              <a class="btn-primary cv-button cv-button-mobile-expanded" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+            </div>
+            {% else %}
+            <div class="experience-mobile-top experience-mobile-top-cv-only">
+              <a class="btn-primary cv-button cv-button-mobile-collapsed" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+            </div>
+            {% endif %}
           </div>
         </section>
 
-        <a class="btn-primary cv-button" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+        <a class="btn-primary cv-button cv-button-desktop-only" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
 
-        <section class="section education">
+        <section class="section education" id="education-section">
           <h2 class="section-title">Education</h2>
-          <div class="timeline">
+          <button type="button" class="sidebar-expand-btn sidebar-expand-education-top" id="education-expand-btn-top" aria-expanded="false" aria-controls="education-panel">Show education</button>
+          <div id="education-panel" class="timeline education-panel">
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
@@ -111,6 +143,7 @@ title: Home
               </div>
             </div>
           </div>
+          <button type="button" class="sidebar-expand-btn sidebar-expand-education-bottom" id="education-collapse-btn-bottom" aria-expanded="true" aria-controls="education-panel">Hide education</button>
         </section>
       </div>
     </aside>

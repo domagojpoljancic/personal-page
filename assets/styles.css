@@ -530,6 +530,164 @@ body.site {
   margin-bottom: 0.25rem;
 }
 
+/* Mobile-only: collapsible experience / education (desktop unchanged) */
+.experience-mobile-top,
+.experience-mobile-bottom,
+.experience-mobile-top-cv-only {
+  display: none;
+}
+
+.sidebar-expand-btn {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  min-height: 2.75rem;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--bg-soft);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sidebar-expand-btn:hover,
+.sidebar-expand-btn:focus-visible {
+  color: var(--accent);
+  border-color: var(--border-strong);
+  outline: none;
+}
+
+.sidebar-expand-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+@media (max-width: 800px) {
+  .experience-mobile-top,
+  .experience-mobile-bottom {
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    padding-left: 0.4rem;
+    width: calc(100% + 0.4rem);
+    max-width: 100%;
+  }
+
+  .experience-mobile-top-cv-only {
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.25rem;
+    padding-left: 0.4rem;
+    width: calc(100% + 0.4rem);
+    max-width: 100%;
+  }
+
+  .section.experience-single-role .experience-mobile-top-cv-only {
+    display: flex;
+  }
+
+  .section.experience:not(.experience-single-role):not([data-mobile-exp="expanded"]) .experience-mobile-top {
+    display: flex;
+  }
+
+  .section.experience:not(.experience-single-role)[data-mobile-exp="expanded"] .experience-mobile-bottom {
+    display: flex;
+    margin-top: 2rem;
+    padding-left: 0.4rem;
+  }
+
+  .cv-button-mobile-collapsed,
+  .cv-button-mobile-expanded {
+    display: inline-flex;
+    align-self: stretch;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .section.experience:not(.experience-single-role)[data-mobile-exp="expanded"] .cv-button-mobile-collapsed,
+  .section.experience:not(.experience-single-role):not([data-mobile-exp="expanded"]) .cv-button-mobile-expanded {
+    display: none;
+  }
+
+  .cv-button-desktop-only {
+    display: none !important;
+  }
+
+  .sidebar-expand-experience-top,
+  .sidebar-expand-experience-bottom,
+  .sidebar-expand-education-top,
+  .sidebar-expand-education-bottom {
+    display: none;
+  }
+
+  .section.experience:not(.experience-single-role):not([data-mobile-exp="expanded"]) .sidebar-expand-experience-top {
+    display: block;
+  }
+
+  .section.experience:not(.experience-single-role)[data-mobile-exp="expanded"] .sidebar-expand-experience-bottom {
+    display: block;
+  }
+
+  .section.education:not([data-mobile-edu="expanded"]) .sidebar-expand-education-top {
+    display: block;
+    margin: 0 auto 0.75rem;
+    max-width: 100%;
+  }
+
+  .section.education[data-mobile-edu="expanded"] .sidebar-expand-education-bottom {
+    display: block;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  #experience-more-panel:not(.experience-expanded-mobile) {
+    display: none !important;
+  }
+
+  #education-panel:not(.education-expanded-mobile) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 801px) {
+  .experience-mobile-top,
+  .experience-mobile-bottom,
+  .experience-mobile-top-cv-only {
+    display: none !important;
+  }
+
+  .cv-button-mobile-collapsed,
+  .cv-button-mobile-expanded {
+    display: none !important;
+  }
+
+  .cv-button-desktop-only {
+    display: inline-block;
+  }
+
+  .sidebar-expand-experience-top,
+  .sidebar-expand-experience-bottom,
+  .sidebar-expand-education-top,
+  .sidebar-expand-education-bottom {
+    display: none !important;
+  }
+
+  #experience-more-panel,
+  #education-panel {
+    display: block !important;
+  }
+}
+
 /* NOTES – article previews, section anchor with clear hierarchy */
 .section.notes.notes-preview {
   padding-top: 1.5rem;
@@ -1025,6 +1183,9 @@ body.site.post-page {
   .main {
     border-left: none;
     padding-left: 0;
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 2rem;
+    margin-top: 0.25rem;
   }
 
   .sidebar {
