@@ -8,7 +8,7 @@ test.describe('Visual regression', () => {
   });
 
   test('article page', async ({ page }) => {
-    await page.goto('/2026/01/01/first-note.html');
+    await page.goto('/2026/03/06/my-ai-journey-so-far.html');
     await expect(page).toHaveScreenshot('article-first-note.png', { maxDiffPixels: 100 });
   });
 });

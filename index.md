@@ -116,42 +116,45 @@ title: Home
     </aside>
 
     <main class="main">
-      <div class="main-stack">
-        <div class="intro-card">
-          <p class="intro-eyebrow">About</p>
-          <p class="intro-lede">
-            Technical, product-centric leader with 9+ years in system engineering, business analysis, and technical product management. I focus on backend platforms, APIs, and integrations—turning business priorities into clear architecture and scalable services that engineering teams can build and run.
-          </p>
-          <p class="hero-bio">
-            I sit between engineering and product: requirements, discovery, and direction for backend-heavy systems. I’ve shipped platform products for player accounts and KYC, tenant integrations and observability, POS and mobile apps, and I’m deepening my practice in AI and LLM-enabled tooling. I work in Agile contexts and care about clear documentation and observability so teams can move fast without losing clarity.
-          </p>
-          <div class="chips">
-            <span class="chip">Product Strategy</span>
-            <span class="chip">Backend & APIs</span>
-            <span class="chip">AI & RAG</span>
-            <span class="chip">SaaS & E‑commerce</span>
+      <div class="main-content">
+        <h2 class="main-headline">Technical Product Manager building scalable backend platforms, APIs, and AI-enabled systems.</h2>
+
+        <p class="main-summary">
+          I’m a technical product leader with 9+ years across product management and system engineering, focused on backend platforms and APIs. I sit between product and engineering to turn messy requirements into clear architectures: platforms, integrations, and services that teams can actually ship and operate. I’ve led platform work on player accounts, KYC, tenant integrations, and observability, with a strong bias toward documentation and visibility so teams move fast without losing trust in the system.
+        </p>
+
+        <section class="focus-areas" aria-label="Focus areas">
+          <h3 class="focus-areas-title">Focus Areas</h3>
+          <div class="focus-areas-grid">
+            <span class="focus-area-tag">Product Strategy</span>
+            <span class="focus-area-tag">Technical Leadership</span>
+            <span class="focus-area-tag">Backend Platform Architecture</span>
+            <span class="focus-area-tag">SaaS</span>
+            <span class="focus-area-tag">Systems Design</span>
+            <span class="focus-area-tag">APIs & Integrations</span>
+            <span class="focus-area-tag">Authentication & Identity</span>
+            <span class="focus-area-tag">KYC & Regulated Systems</span>
+            <span class="focus-area-tag">Observability & Reliability</span>
+            <span class="focus-area-tag">AI & LLM Systems</span>
           </div>
+        </section>
+
+        <div class="main-focus main-focus-editorial">
+          <p class="focus-label">Current Focus</p>
+          <p class="focus-block"><strong>Work:</strong><br>Leading product and architecture for B2B backend platforms - APIs, player accounts, KYC, and authentication. Driving clarity and reducing integration friction so teams can ship faster on reliable foundations.</p>
+          <p class="focus-block"><strong>Side:</strong><br>Building a vibecoded iOS app (LangGraph, RAG). Exploring LLM systems, agents, and reliability: from prototyping to real-world constraints.</p>
         </div>
 
-        <div class="status-card focus-card">
-          <p class="status-label">Current focus</p>
-          <p class="status-value">At work I focus on an internal B2B platform: backend services and APIs that other business units use to integrate. I own product and architecture for player account management, KYC, and lifecycle flows—so internal teams can ship faster with less friction.</p>
-          <p class="status-value">On the side I'm building the Vibe Coding iOS app (LangGraph, RAG) and learning AI architecture and foundations—LLMs, agents, reliability.</p>
-        </div>
-
-        <!-- Future portfolio / case study ideas (from CV): Responsible Gambling AI system architecture; Datadog observability rollout across tenant integrations; Backend API platform for Player Account Management; POS kiosk and ordering platform expansion; UAV research project. -->
-        <section class="section notes" id="notes">
-          <div class="notes-header">
-            <h2 class="section-title">Notes</h2>
-            <p class="section-intro">Technical and product reflections—experiments, tools, and what I’m learning along the way.</p>
-          </div>
-          <div class="notes-list">
+        <section class="section notes notes-preview" id="notes">
+          <h2 class="notes-section-title">Notes</h2>
+          <p class="notes-section-intro">Technical and product reflections: experiments, tools, and what I’m learning.</p>
+          <div class="notes-feed">
             {% for post in site.posts limit:5 %}
-              <article class="note-card">
-                <p class="note-date">{{ post.date | date: "%Y-%m-%d" }}</p>
-                <h3 class="note-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                <p class="note-excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 20 }}</p>
-                <a class="note-read" href="{{ post.url | relative_url }}">Read more →</a>
+              <article class="note-preview">
+                <p class="note-preview-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+                <h3 class="note-preview-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p class="note-preview-excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 28 }}</p>
+                <a class="note-preview-link" href="{{ post.url | relative_url }}">Read more →</a>
               </article>
             {% endfor %}
           </div>

@@ -1,6 +1,6 @@
 - title: Technical Product Manager
   company: Zeal Network SE (Lotto24)
-  dates: "2023 — Present"
+  dates: "2023 - Present"
   bullets:
     - Own architectural direction for backend APIs and integration flows; reduced integration friction for internal B2B teams.
     - Drove KYC and player-account lifecycle design with focus on secure data handling and scalable services.
@@ -8,7 +8,7 @@
 
 - title: Technical Product Manager
   company: ABOUT YOU SE & Co. KG (SCAYLE)
-  dates: "2021 — 2023"
+  dates: "2021 - 2023"
   bullets:
     - Led backend teams on Middleware product for tenant connectivity; shipped integrations for FC Bayern, Deichmann, Fielmann, others.
     - Translated business priorities into backend architecture and observability; introduced Datadog for unified monitoring and logging.
@@ -16,7 +16,7 @@
 
 - title: Business Analyst
   company: Integrated Business Systems IPS – Remaris
-  dates: "2019 — 2021"
+  dates: "2019 - 2021"
   bullets:
     - Delivered POS portfolio (self-ordering kiosks, mobile ordering, integrations); product lead on mobile apps (Leggiero, Burger King Croatia, Batak).
     - Expanded company into three new markets (Slovenia, Bosnia, Montenegro) via technical delivery and requirements.
@@ -24,7 +24,7 @@
 
 - title: System Engineer
   company: Croatian Telecom (Deutsche Telekom Group)
-  dates: "2017 — 2019"
+  dates: "2017 - 2019"
   bullets:
     - Automated ERP and billing workflows; improved big-data and BI analysis with Oracle PL/SQL.
     - Optimized monthly invoice processing for fixed-line and mobile; reduced manual intervention.
