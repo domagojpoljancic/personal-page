@@ -744,7 +744,7 @@ body.site {
 }
 
 .note-preview-title a {
-  color: var(--text);
+  color: var(--accent);
   text-decoration: none;
 }
 
