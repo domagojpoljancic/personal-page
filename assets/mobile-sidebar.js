@@ -32,6 +32,31 @@
     if (bottomBtn) bottomBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
   }
 
+  function setExperienceDesktopExpanded(expanded) {
+    var btn = document.getElementById('experience-desktop-toggle-btn');
+    var panel = document.getElementById('experience-more-panel');
+    var slotTop = document.getElementById('experience-toggle-slot-top');
+    var slotBottom = document.getElementById('experience-toggle-slot-bottom');
+    if (!btn || !panel) return;
+
+    if (slotTop && slotBottom) {
+      if (expanded) {
+        slotBottom.appendChild(btn);
+      } else {
+        slotTop.appendChild(btn);
+      }
+    }
+
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    panel.classList.toggle('experience-expanded-mobile', expanded);
+    panel.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+
+    var more = btn.querySelector('.experience-toggle-label-more');
+    var less = btn.querySelector('.experience-toggle-label-less');
+    if (more) more.hidden = expanded;
+    if (less) less.hidden = !expanded;
+  }
+
   function applyDesktop() {
     var expSection = document.getElementById('experience-section');
     var expPanel = document.getElementById('experience-more-panel');
@@ -40,21 +65,19 @@
     if (expSection) expSection.removeAttribute('data-mobile-exp');
     if (eduSection) eduSection.removeAttribute('data-mobile-edu');
     if (expPanel) {
-      expPanel.classList.add('experience-expanded-mobile');
-      expPanel.removeAttribute('aria-hidden');
+      expPanel.classList.remove('experience-expanded-mobile');
+      expPanel.setAttribute('aria-hidden', 'true');
     }
     if (eduPanel) {
       eduPanel.classList.add('education-expanded-mobile');
       eduPanel.removeAttribute('aria-hidden');
     }
-    var t = document.getElementById('experience-expand-btn-top');
-    var b = document.getElementById('experience-collapse-btn-bottom');
-    if (t) t.setAttribute('aria-expanded', 'true');
-    if (b) b.setAttribute('aria-expanded', 'true');
     var et = document.getElementById('education-expand-btn-top');
     var eb = document.getElementById('education-collapse-btn-bottom');
     if (et) et.setAttribute('aria-expanded', 'true');
     if (eb) eb.setAttribute('aria-expanded', 'true');
+
+    setExperienceDesktopExpanded(false);
   }
 
   function applyMobileInitial() {
@@ -96,6 +119,15 @@
   if (eduBottom) {
     eduBottom.addEventListener('click', function () {
       if (isMobile()) setEducationMobile(false);
+    });
+  }
+
+  var expDesktopBtn = document.getElementById('experience-desktop-toggle-btn');
+  if (expDesktopBtn) {
+    expDesktopBtn.addEventListener('click', function () {
+      if (isMobile()) return;
+      var open = expDesktopBtn.getAttribute('aria-expanded') === 'true';
+      setExperienceDesktopExpanded(!open);
     });
   }
 

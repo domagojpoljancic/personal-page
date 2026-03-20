@@ -84,13 +84,32 @@ title: Home
               </div>
             {% endfor %}
             {% if exp_roles.size > 1 %}
+              {% for role in exp_roles offset:1 limit:1 %}
+                <div class="timeline-item experience-second-desktop-only">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-role">{{ role.title }}</h3>
+                    <p class="timeline-meta">{{ role.company }} · {{ role.dates }}</p>
+                    <ul class="timeline-bullets">
+                      {% for bullet in role.bullets %}
+                        <li>{{ bullet }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endfor %}
+            {% endif %}
+            {% if exp_roles.size > 2 %}
+              <div id="experience-toggle-slot-top" class="experience-toggle-slot-top"></div>
+            {% endif %}
+            {% if exp_roles.size > 1 %}
             <div class="experience-mobile-top">
               <button type="button" class="sidebar-expand-btn sidebar-expand-experience-top" id="experience-expand-btn-top" aria-expanded="false" aria-controls="experience-more-panel">Show more experience</button>
               <a class="btn-primary cv-button cv-button-mobile-collapsed" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
             </div>
             <div id="experience-more-panel" class="experience-more-panel">
               {% for role in exp_roles offset:1 %}
-                <div class="timeline-item">
+                <div class="timeline-item{% if forloop.first %} experience-more-second-mobile-only{% endif %}">
                   <div class="timeline-marker"></div>
                   <div class="timeline-content">
                     <h3 class="timeline-role">{{ role.title }}</h3>
@@ -104,6 +123,14 @@ title: Home
                 </div>
               {% endfor %}
             </div>
+            {% if exp_roles.size > 2 %}
+              <div id="experience-toggle-slot-bottom" class="experience-toggle-slot-bottom">
+                <button type="button" class="experience-desktop-toggle" id="experience-desktop-toggle-btn" aria-expanded="false" aria-controls="experience-more-panel">
+                  <span class="experience-toggle-label-more">Show more experience</span>
+                  <span class="experience-toggle-label-less" hidden>Show less experience</span>
+                </button>
+              </div>
+            {% endif %}
             <div class="experience-mobile-bottom">
               <button type="button" class="sidebar-expand-btn sidebar-expand-experience-bottom" id="experience-collapse-btn-bottom" aria-expanded="true" aria-controls="experience-more-panel">Hide experience</button>
               <a class="btn-primary cv-button cv-button-mobile-expanded" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
