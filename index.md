@@ -106,6 +106,7 @@ title: Home
             <div class="experience-mobile-top">
               <button type="button" class="sidebar-expand-btn sidebar-expand-experience-top" id="experience-expand-btn-top" aria-expanded="false" aria-controls="experience-more-panel">Show more experience</button>
               <a class="btn-primary cv-button cv-button-mobile-collapsed" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+              <a class="btn-secondary cv-button references-button cv-button-mobile-collapsed" href="mailto:domagoj.poljancic@gmail.com?subject=Reference%20request%20for%20Domagoj%20Poljancic&body=Hi%20Domagoj%2C%0A%0AI%E2%80%99d%20like%20to%20request%20references%20regarding%20your%20experience%20for%20a%20role%2Fopportunity.%0A%0ACompany%3A%0ARole%3A%0A%0AThanks%2C%0A">Request references</a>
             </div>
             <div id="experience-more-panel" class="experience-more-panel">
               {% for role in exp_roles offset:1 %}
@@ -134,16 +135,19 @@ title: Home
             <div class="experience-mobile-bottom">
               <button type="button" class="sidebar-expand-btn sidebar-expand-experience-bottom" id="experience-collapse-btn-bottom" aria-expanded="true" aria-controls="experience-more-panel">Hide experience</button>
               <a class="btn-primary cv-button cv-button-mobile-expanded" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+              <a class="btn-secondary cv-button references-button cv-button-mobile-expanded" href="mailto:domagoj.poljancic@gmail.com?subject=Reference%20request%20for%20Domagoj%20Poljancic&body=Hi%20Domagoj%2C%0A%0AI%E2%80%99d%20like%20to%20request%20references%20regarding%20your%20experience%20for%20a%20role%2Fopportunity.%0A%0ACompany%3A%0ARole%3A%0A%0AThanks%2C%0A">Request references</a>
             </div>
             {% else %}
             <div class="experience-mobile-top experience-mobile-top-cv-only">
               <a class="btn-primary cv-button cv-button-mobile-collapsed" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+              <a class="btn-secondary cv-button references-button cv-button-mobile-collapsed" href="mailto:domagoj.poljancic@gmail.com?subject=Reference%20request%20for%20Domagoj%20Poljancic&body=Hi%20Domagoj%2C%0A%0AI%E2%80%99d%20like%20to%20request%20references%20regarding%20your%20experience%20for%20a%20role%2Fopportunity.%0A%0ACompany%3A%0ARole%3A%0A%0AThanks%2C%0A">Request references</a>
             </div>
             {% endif %}
           </div>
         </section>
 
         <a class="btn-primary cv-button cv-button-desktop-only" href="{{ '/assets/Domagoj_Poljancic_CV_2026.pdf' | relative_url }}">Download CV</a>
+        <a class="btn-secondary cv-button references-button cv-button-desktop-only" href="mailto:domagoj.poljancic@gmail.com?subject=Reference%20request%20for%20Domagoj%20Poljancic&body=Hi%20Domagoj%2C%0A%0AI%E2%80%99d%20like%20to%20request%20references%20regarding%20your%20experience%20for%20a%20role%2Fopportunity.%0A%0ACompany%3A%0ARole%3A%0A%0AThanks%2C%0A">Request references</a>
 
         <section class="section education" id="education-section">
           <h2 class="section-title">Education</h2>
