@@ -1,22 +1,22 @@
 ---
-title: "A weekend live coding experiment"
-date: 2026-03-17
-description: "A short write-up of building a small iOS app in a weekend using Cursor and live coding, combining product thinking with AI-assisted development."
-excerpt: "A short write-up of building a small iOS app in a weekend using Cursor and live coding, combining product thinking with AI-assisted development."
+title: "A weekend vibe coding experiment"
+date: 2026-03-12
+description: "A short write-up of building a small iOS app in a weekend using Cursor and vibe coding, combining product thinking with AI-assisted development."
+excerpt: "A short write-up of building a small iOS app in a weekend using Cursor and vibe coding, combining product thinking with AI-assisted development."
 layout: post
-slug: weekend-live-coding-experiment
+slug: weekend-vibe-coding-experiment
 cover: /assets/images/weekend-live-coding-cover.png
 tags: [ai, cursor, live-coding, ios]
 ---
 
-# A weekend live coding experiment  
-*17.03.2026*
+# A weekend vibe coding experiment  
+*12.03.2026*
 
-I decided to finally try live coding seriously—not just playing around with prompts, but actually building something real. The goal wasn’t to generate code snippets, but to end up with a working app: something structured, usable, and grounded in a real use case (mine).
+I decided to finally try vibe coding seriously—not just playing around with prompts, but actually building something real. The goal wasn’t to generate code snippets, but to end up with a working app: something structured, usable, and grounded in a real use case (mine).
 
 After reading quite a bit about different tools over the past year, one kept coming up: Cursor. I had seen people use it successfully for actual development work, not just experiments, so I decided to give it a proper try. I briefly considered alternatives like Lovable, but Cursor felt like the better choice if I wanted something that could handle real logic and potentially grow into something more complex later.
 
-For me, live coding means compressing product thinking, design, and development into a single continuous flow. You’re not separating phases anymore. You define the idea, shape the product, think through structure, and build it—all at once. The key difference is that you’re not doing it alone. You’re working with a system that can turn your ideas into code, suggest structure, help debug, and even write tests. But that only works if you guide it properly. Without structure, it quickly turns into noise.
+For me, vibe coding means compressing product thinking, design, and development into a single continuous flow. You’re not separating phases anymore. You define the idea, shape the product, think through structure, and build it—all at once. The key difference is that you’re not doing it alone. You’re working with a system that can turn your ideas into code, suggest structure, help debug, and even write tests. But that only works if you guide it properly. Without structure, it quickly turns into noise.
 
 Interestingly, this project didn’t start in Cursor. It started in Miro. For a few weeks, I had been collecting ideas—most of them didn’t lead anywhere. After a couple of failed attempts with other concepts and tools, I decided to simplify the problem. Instead of trying to build something “interesting,” I focused on something I already use every day: a physical vocabulary box for learning German.
 
@@ -36,8 +36,8 @@ At the same time, not everything was smooth. Some things didn’t work on the fi
 
 What made the difference was being strict about what not to build. I intentionally skipped backend work, authentication, user profiles, and more advanced AI features. That kept the scope manageable and allowed me to actually finish something instead of endlessly extending it.
 
-So, does live coding actually work? Yes—but only under the right conditions. AI clearly compresses the process of building an MVP. You can go from idea to a working app in hours instead of days. Setup is faster, iteration is faster, and even structure can emerge quickly. But there’s an important caveat: anyone can build an AI app, but not everyone can build a good one. The difference comes down to judgment—knowing what to build, what to skip, and how to guide the system.
+So, does vibe coding actually work? Yes—but only under the right conditions. AI clearly compresses the process of building an MVP. You can go from idea to a working app in hours instead of days. Setup is faster, iteration is faster, and even structure can emerge quickly. But there’s an important caveat: anyone can build an AI app, but not everyone can build a good one. The difference comes down to judgment—knowing what to build, what to skip, and how to guide the system.
 
-For me, this experiment proved that live coding works if you constrain the problem properly. Without constraints, you generate a lot but build very little. With them, you can move surprisingly fast and end up with something that actually makes sense.
+For me, this experiment proved that vibe coding works if you constrain the problem properly. Without constraints, you generate a lot but build very little. With them, you can move surprisingly fast and end up with something that actually makes sense.
 
 In the next post, I’ll go into the app itself—what I built, how it works, and what the first version actually looks like.
