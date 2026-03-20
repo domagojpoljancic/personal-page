@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My AI Journey So Far"
-date: 2026-03-06 10:00:00 +0000
+date: 2026-03-10 10:00:00 +0000
 excerpt: "From skepticism to daily AI usage: how I started integrating AI into my workflow and building with it."
 cover: /assets/images/ai-journey-cover.png
 ---
