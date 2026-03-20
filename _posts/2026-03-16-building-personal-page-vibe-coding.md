@@ -4,6 +4,7 @@ date: 2026-03-16
 description: "Notes on building my personal website with GitHub Pages and vibe coding — what worked, what didn’t, and what I’d do differently."
 layout: post
 slug: building-personal-page-vibe-coding
+cover: /assets/images/image-6b57a37f-8102-4cd1-9ed3-4e519003d2ac.png
 tags: [ai, vibe-coding, github-pages]
 ---
 

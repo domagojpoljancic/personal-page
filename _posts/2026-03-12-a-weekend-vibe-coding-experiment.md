@@ -9,9 +9,6 @@ cover: /assets/images/weekend-live-coding-cover.png
 tags: [ai, cursor, live-coding, ios]
 ---
 
-# A weekend vibe coding experiment  
-*12.03.2026*
-
 I decided to finally try vibe coding seriously—not just playing around with prompts, but actually building something real. The goal wasn’t to generate code snippets, but to end up with a working app: something structured, usable, and grounded in a real use case (mine).
 
 After reading quite a bit about different tools over the past year, one kept coming up: Cursor. I had seen people use it successfully for actual development work, not just experiments, so I decided to give it a proper try. I briefly considered alternatives like Lovable, but Cursor felt like the better choice if I wanted something that could handle real logic and potentially grow into something more complex later.

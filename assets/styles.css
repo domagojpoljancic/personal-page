@@ -828,12 +828,12 @@ body.site {
 }
 
 .note-preview-title a {
-  color: var(--accent);
+  color: var(--focus-accent);
   text-decoration: none;
 }
 
 .note-preview-title a:hover {
-  color: var(--accent);
+  color: var(--focus-accent);
 }
 
 .note-preview-excerpt {
@@ -848,7 +848,7 @@ body.site {
   display: inline-block;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--accent);
+  color: var(--focus-accent);
   text-decoration: none;
 }
 

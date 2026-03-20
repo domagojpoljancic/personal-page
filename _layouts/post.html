@@ -19,9 +19,6 @@
                 {{ page.date | date: "%B %-d, %Y" }}
               </time>
             </p>
-            {% if page.excerpt %}
-              <p class="post-dek">{{ page.excerpt }}</p>
-            {% endif %}
             {% if page.cover %}
               <div class="post-cover-wrap">
                 <img class="post-cover" src="{{ page.cover | relative_url }}" alt="">
