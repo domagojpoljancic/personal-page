@@ -5,7 +5,7 @@ layout: post
 description: "From simple AI idea to hybrid backend — LangGraph, database, and the reality of building AI features."
 excerpt: "From simple AI idea to hybrid backend — LangGraph, database, and the reality of building AI features."
 slug: putting-ai-into-action-for-linguai
-cover: /assets/images/image-7398f0ce-6749-498b-b3a5-85abc5ac5f32.png
+cover: /assets/images/image-dfc0a61e-1b2f-4c44-9299-b23938d4b75c.png
 tags: [ai, backend, langgraph, retrieval, ios]
 ---
 
