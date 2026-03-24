@@ -1,10 +1,11 @@
 ---
-title: "Building the backend (and making it actually work)"
+title: "Putting AI into action for LinguAI"
 date: 2026-03-23 12:00:00 +0000
 layout: post
 description: "From simple AI idea to hybrid backend — LangGraph, database, and the reality of building AI features."
 excerpt: "From simple AI idea to hybrid backend — LangGraph, database, and the reality of building AI features."
-slug: building-the-backend-and-making-it-actually-work
+slug: putting-ai-into-action-for-linguai
+cover: /assets/images/image-7398f0ce-6749-498b-b3a5-85abc5ac5f32.png
 tags: [ai, backend, langgraph, retrieval, ios]
 ---
 
