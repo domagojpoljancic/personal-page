@@ -1,5 +1,5 @@
 ---
-title: "Building Baby Routine between diaper changes"
+title: "Building Baby Routine App between diaper changes at home"
 date: 2026-04-11 10:00:00 +0000
 layout: post
 description: "Baby Routine is a watch-first helper for parents to log bottle and breast feeds plus diaper changes from the wrist, without reaching for a phone."

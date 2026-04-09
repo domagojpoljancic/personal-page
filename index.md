@@ -206,7 +206,7 @@ title: Home
         <div class="main-focus main-focus-editorial">
           <p class="focus-label">Current Focus</p>
           <p class="focus-block"><strong>Work:</strong><br>Leading product and architecture for B2B backend platforms - APIs, player accounts, KYC, and authentication. Driving clarity and reducing integration friction so teams can ship faster on reliable foundations.</p>
-          <p class="focus-block"><strong>Side:</strong><br>Building a vibecoded iOS app (LangGraph, RAG). Exploring LLM systems, agents, and reliability: from prototyping to real-world constraints.</p>
+          <p class="focus-block"><strong>Side:</strong><br>Currently building Baby Routine, a watch-first helper for parents to log bottle feeds, left or right breast feeds, and diaper changes from the wrist.<br><br>Built a vibecoded iOS app (LangGraph, RAG) and explored LLM systems, agents, and reliability from prototyping to real-world constraints.</p>
         </div>
 
         <section class="section notes notes-preview" id="notes">
