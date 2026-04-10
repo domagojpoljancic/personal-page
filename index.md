@@ -217,7 +217,7 @@ title: Home
               <article class="note-preview">
                 <p class="note-preview-date">{{ post.date | date: "%Y-%m-%d" }}</p>
                 <h3 class="note-preview-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                <p class="note-preview-excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 28 }}</p>
+                <p class="note-preview-excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 40 }}</p>
                 {% if post.coming_soon %}
                   <span class="note-preview-link">COMING SOON</span>
                 {% else %}
