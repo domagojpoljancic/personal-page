@@ -213,12 +213,6 @@ title: Home
           <h2 class="notes-section-title">Notes</h2>
           <p class="notes-section-intro">Technical and product reflections: experiments, tools, and what I’m learning.</p>
           <div class="notes-feed">
-            <article class="note-preview note-preview-disabled" aria-disabled="true">
-              <p class="note-preview-date">2026-05-06</p>
-              <h3 class="note-preview-title">Exploring new AI ideas while parents keep requesting Baby Tracker features</h3>
-              <p class="note-preview-excerpt">While exploring new AI ideas and learning new technologies, I still shipped three Baby Routine Tracker updates — one of which made a happy parent send me an advanced baby thermometer as a gift.</p>
-              <span class="note-preview-badge">Coming soon</span>
-            </article>
             {% for post in site.posts limit:5 %}
               <article class="note-preview">
                 <p class="note-preview-date">{{ post.date | date: "%Y-%m-%d" }}</p>
